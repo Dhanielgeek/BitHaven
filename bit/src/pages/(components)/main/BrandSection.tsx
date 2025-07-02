@@ -2,17 +2,6 @@ import React from "react";
 import { Star, Quote } from "lucide-react";
 
 const BrandsSection = () => {
-  const brands = [
-    { name: "TechCorp", logo: "TC" },
-    { name: "InnovateLab", logo: "IL" },
-    { name: "StartupX", logo: "SX" },
-    { name: "DigitalPro", logo: "DP" },
-    { name: "FutureNow", logo: "FN" },
-    { name: "CloudFirst", logo: "CF" },
-    { name: "DataFlow", logo: "DF" },
-    { name: "NextGen", logo: "NG" },
-  ];
-
   const testimonials = [
     {
       id: 1,
@@ -57,20 +46,6 @@ const BrandsSection = () => {
           <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-8">
             Brands We Work With
           </h2>
-
-          {/* Brands Grid */}
-          <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-8 gap-8 items-center justify-items-center">
-            {brands.map((brand, index) => (
-              <div
-                key={index}
-                className="group w-20 h-20 bg-white rounded-2xl shadow-md hover:shadow-lg transition-all duration-300 flex items-center justify-center hover:scale-110 cursor-pointer"
-              >
-                <div className="text-2xl font-bold text-gray-600 group-hover:text-gray-800 transition-colors">
-                  {brand.logo}
-                </div>
-              </div>
-            ))}
-          </div>
         </div>
 
         {/* Client Testimonials */}
