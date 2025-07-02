@@ -10,7 +10,9 @@ import {
   Phone,
   MapPin,
 } from "lucide-react";
-
+import Link from "next/link";
+import Image from "next/image";
+import logo from "../../../../public/bithav-removebg-preview.png";
 const Footer = () => {
   return (
     <footer className="bg-gray-900 text-white pt-16 pb-10">
@@ -19,7 +21,20 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-10">
           {/* Brand Info */}
           <div>
-            <h3 className="text-2xl font-bold mb-4">BitHaven</h3>
+            {/* Logo and Brand */}
+            <Link href="/" className="flex items-center space-x-3">
+              <div className=" w-32 h-32 relative">
+                <Image
+                  src={logo}
+                  alt="BitHaven Logo"
+                  fill
+                  className="object-contain"
+                  sizes="150px"
+                  priority
+                />
+              </div>
+            </Link>
+
             <p className="text-gray-400 text-sm">
               Your all-in-one digital agency delivering creative, tech, and
               growth solutions to help your brand thrive.
@@ -46,10 +61,10 @@ const Footer = () => {
                 <MapPin className="w-4 h-4" /> Lagos, Nigeria
               </li>
               <li className="flex items-center gap-2">
-                <Mail className="w-4 h-4" /> contact@bithaven.com
+                <Mail className="w-4 h-4" /> bithaventechnologies@gmail.com
               </li>
               <li className="flex items-center gap-2">
-                <Phone className="w-4 h-4" /> +234 800 000 0000
+                <Phone className="w-4 h-4" /> +234 8159701004
               </li>
             </ul>
           </div>

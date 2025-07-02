@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
-import { Mail, Phone, MapPin, Send, CheckCircle } from "lucide-react";
+import { Mail, Phone, Send, CheckCircle } from "lucide-react";
 import Mainlayouts from "./layouts/Mainlayouts";
 
 const ContactSection = () => {
@@ -56,20 +56,14 @@ const ContactSection = () => {
     {
       icon: <Mail className="w-6 h-6 text-blue-600" />,
       title: "Email Us",
-      details: "hello@digitalcraft.agency",
+      details: "bithaventechnologies@gmail.com",
       subtext: "We'll respond within 24 hours",
     },
     {
       icon: <Phone className="w-6 h-6 text-blue-600" />,
       title: "Call Us",
-      details: "+1 (555) 123-4567",
+      details: "+234 (815) 970-1004",
       subtext: "Mon-Fri 9AM-6PM EST",
-    },
-    {
-      icon: <MapPin className="w-6 h-6 text-blue-600" />,
-      title: "Visit Us",
-      details: "123 Innovation Street",
-      subtext: "San Francisco, CA 94105",
     },
   ];
 
